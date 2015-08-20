@@ -4,7 +4,6 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
@@ -16,9 +15,9 @@ namespace Hackaton.Boilerplate.DAO
         private readonly IMongoDatabase _db;
         private readonly IMongoCollection<News> _col;
 
-        public NewsRepository()
+        public NewsRepository(IMongoClient client)
         {
-            _client = new MongoClient(ConfigurationManager.ConnectionStrings["mongodb"].ConnectionString);
+            _client = client;
             _db = _client.GetDatabase("crud");
             _col = _db.GetCollection<News>("news");
         }
