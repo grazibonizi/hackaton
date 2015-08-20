@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Boilerplate.API", "Hackaton.Boilerplate.API\Hackaton.Boilerplate.API.csproj", "{FEEC1541-2642-455C-B908-4456F891CBB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{819BB112-07E9-4D88-AAB1-D8FCBAFFD329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C19CFA10-956E-4DCC-BA5D-0AA050FABE51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{4BDBD404-BD67-49A3-A00E-33B6475822E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Boilerplate", "Hackaton.Boilerplate\Hackaton.Boilerplate.csproj", "{FDD05B60-60B7-4FE1-AE4D-F403B962F962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Boilerplate.Abstraction", "Hackaton.Boilerplate.Abstraction\Hackaton.Boilerplate.Abstraction.csproj", "{0D834E42-8556-41B4-BED4-7A341AB31EA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Boilerplate.Shared", "Hackaton.Boilerplate.Shared\Hackaton.Boilerplate.Shared.csproj", "{6F683741-8C34-4D6E-818C-4E56AECA896D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Boilerplate.Business", "Hackaton.Boilerplate.Business\Hackaton.Boilerplate.Business.csproj", "{6C46F5D1-1CEE-430A-B242-07FD689D3375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Boilerplate.DAO", "Hackaton.Boilerplate.DAO\Hackaton.Boilerplate.DAO.csproj", "{1CE68677-14E6-4143-B9D7-9C85B861DEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Boilerplate.Bind", "Hackaton.Boilerplate.Bind\Hackaton.Boilerplate.Bind.csproj", "{690014C2-D19C-4C7C-8B51-299BF97A04EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackaton.Boilerplate.Web", "Hackaton.Boilerplate.Web\Hackaton.Boilerplate.Web.csproj", "{3BAC3228-1954-402D-803C-D6C24F6B75F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEEC1541-2642-455C-B908-4456F891CBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEC1541-2642-455C-B908-4456F891CBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEEC1541-2642-455C-B908-4456F891CBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEC1541-2642-455C-B908-4456F891CBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD05B60-60B7-4FE1-AE4D-F403B962F962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD05B60-60B7-4FE1-AE4D-F403B962F962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD05B60-60B7-4FE1-AE4D-F403B962F962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD05B60-60B7-4FE1-AE4D-F403B962F962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D834E42-8556-41B4-BED4-7A341AB31EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D834E42-8556-41B4-BED4-7A341AB31EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D834E42-8556-41B4-BED4-7A341AB31EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D834E42-8556-41B4-BED4-7A341AB31EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F683741-8C34-4D6E-818C-4E56AECA896D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F683741-8C34-4D6E-818C-4E56AECA896D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F683741-8C34-4D6E-818C-4E56AECA896D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F683741-8C34-4D6E-818C-4E56AECA896D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C46F5D1-1CEE-430A-B242-07FD689D3375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C46F5D1-1CEE-430A-B242-07FD689D3375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C46F5D1-1CEE-430A-B242-07FD689D3375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C46F5D1-1CEE-430A-B242-07FD689D3375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CE68677-14E6-4143-B9D7-9C85B861DEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE68677-14E6-4143-B9D7-9C85B861DEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE68677-14E6-4143-B9D7-9C85B861DEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE68677-14E6-4143-B9D7-9C85B861DEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{690014C2-D19C-4C7C-8B51-299BF97A04EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690014C2-D19C-4C7C-8B51-299BF97A04EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690014C2-D19C-4C7C-8B51-299BF97A04EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690014C2-D19C-4C7C-8B51-299BF97A04EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAC3228-1954-402D-803C-D6C24F6B75F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAC3228-1954-402D-803C-D6C24F6B75F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAC3228-1954-402D-803C-D6C24F6B75F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAC3228-1954-402D-803C-D6C24F6B75F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEEC1541-2642-455C-B908-4456F891CBB5} = {4BDBD404-BD67-49A3-A00E-33B6475822E6}
+		{FDD05B60-60B7-4FE1-AE4D-F403B962F962} = {C19CFA10-956E-4DCC-BA5D-0AA050FABE51}
+		{0D834E42-8556-41B4-BED4-7A341AB31EA0} = {C19CFA10-956E-4DCC-BA5D-0AA050FABE51}
+		{6F683741-8C34-4D6E-818C-4E56AECA896D} = {C19CFA10-956E-4DCC-BA5D-0AA050FABE51}
+		{6C46F5D1-1CEE-430A-B242-07FD689D3375} = {C19CFA10-956E-4DCC-BA5D-0AA050FABE51}
+		{1CE68677-14E6-4143-B9D7-9C85B861DEF3} = {C19CFA10-956E-4DCC-BA5D-0AA050FABE51}
+		{690014C2-D19C-4C7C-8B51-299BF97A04EB} = {819BB112-07E9-4D88-AAB1-D8FCBAFFD329}
+		{3BAC3228-1954-402D-803C-D6C24F6B75F3} = {4BDBD404-BD67-49A3-A00E-33B6475822E6}
+	EndGlobalSection
+EndGlobal
