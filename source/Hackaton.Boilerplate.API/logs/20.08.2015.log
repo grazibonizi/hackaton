@@ -1,0 +1,16 @@
+2015-08-20 21:21:17,089 [7] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - constructing NewsBusiness!
+2015-08-20 21:21:17,109 [7] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - validation passed!
+2015-08-20 22:02:17,063 [26] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - constructing business!
+2015-08-20 22:02:17,087 [26] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - validation passed!
+2015-08-20 22:02:17,222 [26] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - Insert called!
+2015-08-20 22:03:42,343 [7] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - constructing business!
+2015-08-20 22:03:42,374 [7] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - validation passed!
+2015-08-20 22:03:45,491 [7] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - Insert called!
+2015-08-20 22:04:48,136 [7] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - constructing business!
+2015-08-20 22:04:48,141 [7] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - validation passed!
+2015-08-20 22:06:11,354 [8] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - constructing business!
+2015-08-20 22:06:11,379 [8] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - validation passed!
+2015-08-20 22:06:11,502 [8] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - GetAll called!
+2015-08-20 22:06:28,441 [8] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - constructing business!
+2015-08-20 22:06:28,445 [8] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - validation passed!
+2015-08-20 22:06:28,449 [8] DEBUG Hackaton.Boilerplate.Shared.Internals.Log4NetAdapter [(null)] - GetAll called!

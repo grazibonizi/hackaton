@@ -15,7 +15,7 @@ using System.Web.Http;
 
 namespace Hackaton.Boilerplate.API.Controllers
 {
-    [Authorize]
+    
     public class AccountController : ApiController
     {
         private readonly ILogger _logger;

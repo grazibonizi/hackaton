@@ -24,7 +24,7 @@ namespace Hackaton.Boilerplate.API
 
             Container.WithWebApi(GlobalConfiguration.Configuration);
         }
-
+        
         public void Configuration(IAppBuilder app)
         {
             //SecurityTokenBuilder.CreateFromKey(string)
@@ -33,5 +33,5 @@ namespace Hackaton.Boilerplate.API
             //app.UseCors(CorsOptions.AllowAll);
         }
     }
-    
+
 }
