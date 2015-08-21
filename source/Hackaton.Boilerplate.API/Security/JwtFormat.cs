@@ -47,7 +47,7 @@ namespace Hackaton.Boilerplate.API.Security
                 expires, 
                 signingCredentials
             );
-
+            
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 

@@ -32,7 +32,7 @@ namespace Hackaton.Boilerplate.Business.Base
             _logger = logger;
         }
 
-        public Task Delete(params T[] itens)
+        public virtual Task Delete(params T[] itens)
         {
             Check.IsNull(() => itens);
 
@@ -40,7 +40,7 @@ namespace Hackaton.Boilerplate.Business.Base
             return _repository.Delete(itens);
         }
 
-        public Task<IList<T>> Get(Expression<Func<T, bool>> where)
+        public virtual Task<IList<T>> Get(Expression<Func<T, bool>> where)
         {
             Check.IsNull(() => where);
 
@@ -48,13 +48,13 @@ namespace Hackaton.Boilerplate.Business.Base
             return _repository.Get(where);
         }
 
-        public Task<IList<T>> GetAll()
+        public virtual Task<IList<T>> GetAll()
         {
             _logger.Debug("GetAll called!");
             return _repository.GetAll();
         }
 
-        public Task Insert(params T[] itens)
+        public virtual Task Insert(params T[] itens)
         {
             Check.IsNull(() => itens);
 
@@ -62,7 +62,7 @@ namespace Hackaton.Boilerplate.Business.Base
             return _repository.Insert(itens);
         }
 
-        public Task Update(params T[] itens)
+        public virtual Task Update(params T[] itens)
         {
             Check.IsNull(() => itens);
 

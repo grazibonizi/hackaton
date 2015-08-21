@@ -11,6 +11,7 @@ namespace Hackaton.Boilerplate.Bind
         {
             container.Register<IBusinessAsync<News>, NewsBusiness>(Reuse.Transient);
             container.Register<IBusinessAsync<UserAccount>, UserAccountBusiness>(Reuse.Transient);
+            container.Register<IUserAccountBusinessAsync, UserAccountBusiness>(Reuse.Transient);
         }
     }
 }

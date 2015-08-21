@@ -1,12 +1,14 @@
 ﻿using Hackaton.Boilerplate.Abstraction.Business;
 using Hackaton.Boilerplate.Abstraction.Internals;
 using Hackaton.Boilerplate.Model;
+using Microsoft.Owin.Security;
 using MongoDB.Bson;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;

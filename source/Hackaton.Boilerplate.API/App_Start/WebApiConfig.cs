@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using Microsoft.Owin.Security.OAuth;
+using System.Web.Http;
 
 namespace Hackaton.Boilerplate.API
 {
@@ -7,6 +8,8 @@ namespace Hackaton.Boilerplate.API
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            config.SuppressDefaultHostAuthentication();
+            config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 
             // Web API routes
             config.MapHttpAttributeRoutes();
