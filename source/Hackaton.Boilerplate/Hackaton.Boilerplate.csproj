@@ -53,7 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constraint\Check.cs" />
+    <Compile Include="Model\LoginInfo.cs" />
     <Compile Include="Model\News.cs" />
+    <Compile Include="Model\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -146,8 +146,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Test2Controller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\JwtFormat.cs" />
+    <Compile Include="Security\JwtOptions.cs" />
+    <Compile Include="Security\OAuthOptions.cs" />
+    <Compile Include="Security\OAuthProvider.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

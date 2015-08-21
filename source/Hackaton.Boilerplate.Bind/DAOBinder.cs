@@ -10,6 +10,7 @@ namespace Hackaton.Boilerplate.Bind
         public static void Setup(IContainer container)
         {
             container.Register<IRepositoryAsync<News>, NewsRepository>(Reuse.Transient);
+            container.Register<IRepositoryAsync<UserAccount>, AccountRepository>(Reuse.Transient);
         }
     }
 }
