@@ -22,6 +22,8 @@ namespace Hackaton.Boilerplate.Bind
                     ), 
                 Reuse.Transient
             );
+
+            container.Register<IHash, SHA512Hash>(Reuse.Transient);
         }
     }
 }

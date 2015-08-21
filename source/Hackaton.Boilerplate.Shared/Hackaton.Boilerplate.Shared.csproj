@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Internals\Log4NetAdapter.cs" />
     <Compile Include="Internals\MailManager.cs" />
+    <Compile Include="Internals\SHA512Hash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

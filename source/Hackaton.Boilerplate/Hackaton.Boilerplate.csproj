@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constraint\Check.cs" />
+    <Compile Include="Exceptions\EmailAlreadyExistsException.cs" />
     <Compile Include="Model\LoginInfo.cs" />
     <Compile Include="Model\News.cs" />
     <Compile Include="Model\UserAccount.cs" />

@@ -1,21 +1,18 @@
 ﻿using Hackaton.Boilerplate.Abstraction.Business;
 using Hackaton.Boilerplate.Abstraction.Internals;
 using Hackaton.Boilerplate.Model;
-using Microsoft.Owin.Security;
 using MongoDB.Bson;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 
 namespace Hackaton.Boilerplate.API.Controllers
 {
-    
+    [Authorize]
     public class AccountController : ApiController
     {
         private readonly ILogger _logger;
@@ -31,12 +28,14 @@ namespace Hackaton.Boilerplate.API.Controllers
         }
 
         // GET: api/Account/5
-        public async Task<HttpResponseMessage> Get(ObjectId id)
+        public async Task<HttpResponseMessage> Get(string id)
         {
             try
             {
+                ObjectId oId = ObjectId.Parse(id);
+
                 IList<UserAccount> accounts;
-                if (id == ObjectId.Empty)
+                if (oId == ObjectId.Empty)
                 {
                     var loggedUser = HttpContext.Current.User.Identity.Name;
                     accounts = await _userAccountBusiness.GetAll();
@@ -44,7 +43,7 @@ namespace Hackaton.Boilerplate.API.Controllers
                 else
                 {
                     accounts = await _userAccountBusiness.Get(
-                        account => account.Id.Equals(id)
+                        account => account.Id.Equals(oId)
                     );
                 }
 

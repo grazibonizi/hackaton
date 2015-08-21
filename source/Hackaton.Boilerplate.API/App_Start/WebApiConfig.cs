@@ -8,15 +8,15 @@ namespace Hackaton.Boilerplate.API
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API enablle swagger docs & interface
             config.
-                EnableSwagger(c => { c.SingleApiVersion("v1", "Hackaton"); })
+                EnableSwagger(
+                    c => c.SingleApiVersion("v1", "Hackaton")
+                )
                 .EnableSwaggerUi();
 
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 
-            // Web API routes
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

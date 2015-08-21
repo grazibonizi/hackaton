@@ -1,5 +1,8 @@
-﻿using Microsoft.Owin.Security;
+﻿using Hackaton.Boilerplate.Abstraction.Business;
+using Hackaton.Boilerplate.Model;
+using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.OAuth;
+using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
@@ -7,9 +10,11 @@ namespace Hackaton.Boilerplate.API.Security
 {
     public class OAuthProvider : OAuthAuthorizationServerProvider
     {
-        public OAuthProvider()
-        {
+        private readonly IUserAccountBusinessAsync _userAccountBusinessAsync;
 
+        public OAuthProvider(IUserAccountBusinessAsync userAccountBusinessAsync)
+        {
+            _userAccountBusinessAsync = userAccountBusinessAsync;
         }
 
         public override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
@@ -23,20 +28,21 @@ namespace Hackaton.Boilerplate.API.Security
             return Task.FromResult(0);
         }
 
-        public override Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
+        public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
         {
             try
             {
                 var username = context.Parameters["username"];
                 var password = context.Parameters["password"];
 
+                UserAccount userFound = null;
+
                 if (!string.IsNullOrWhiteSpace(username)
                     && !string.IsNullOrWhiteSpace(password)
-                    && username.Equals("admin")
-                    && password.Equals("1234")
+                    && (userFound = await _userAccountBusinessAsync.IdentifyUser(username, password)) != null
                 )
                 {
-                    context.OwinContext.Set("otc:username", username);
+                    context.OwinContext.Set("otc:username", userFound.Email);
                     context.Validated();
                 }
                 else
@@ -45,12 +51,11 @@ namespace Hackaton.Boilerplate.API.Security
                     context.Rejected();
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 context.SetError("Server error");
                 context.Rejected();
             }
-            return Task.FromResult(0);
         }
     }
 }

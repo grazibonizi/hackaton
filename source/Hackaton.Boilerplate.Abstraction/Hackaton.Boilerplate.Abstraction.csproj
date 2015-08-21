@@ -55,6 +55,7 @@
     <Compile Include="Business\IBusinessAsync.cs" />
     <Compile Include="Business\IUserAccountBusinessAsync.cs" />
     <Compile Include="DAO\IRepositoryAsync.cs" />
+    <Compile Include="Internals\IHash.cs" />
     <Compile Include="Internals\ILogger.cs" />
     <Compile Include="Internals\IMailManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
